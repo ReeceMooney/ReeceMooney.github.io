@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MediPal</title>
+        <!-- Makes the application Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Allows the use of Bootstrap Resorces -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <!-- Links to Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <!-- Adds Logo to the title bar -->
+        <link rel="icon" type="image/png" href="logo.png" />
+    </head>
+    <body>
+        <header>
+            <!-- Makes the logo image responsive and scale depening on the device --> 
+            <img src="logo.png" alt="logo" class="responsive">
+        </header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand"><span class="glyphicon glyphicon-home"></span> Dashboard
+                    </div>
+                </div>
+                <!-- Makes the nav bar responsive making it scale/collaps depening on the device's screen size -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="order.html"><span class="glyphicon glyphicon-heart-empty"></span> Order more Medication</a></li>
+                        <li><a href="recordep.html"><span class="glyphicon glyphicon-pencil"></span> Record an Episode</a></li>
+                        <li><a href="editprof.html"><span class="glyphicon glyphicon-user"></span> Edit your Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container"style = "background:#337ab7; color:white; text-align:center; border-radius: 10px;
+            border: 2px solid lightgreen; margin-bottom:35px;">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> 
+                   Current Remaining Medication Stock
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> 
+                        2 Units <br>Remaining
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"style="text-align: center;"> 
+                    <img src="defaultuser.png" alt="logo" style= " max-width: 30%; width: 100%; height: auto;" class="user">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"style="text-align: center;"> 
+                    <h3 style="font-size:5.5vw; color:white">
+                        Reece Mooney
+                    </h3> 
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container" id = "PersonalDetails">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <a class="btn btn-primary btn-block"style = "border-radius: 10px;
+                        border: 2px solid white;" data-toggle="collapse" href="#personal" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Personal Details <span class="glyphicon glyphicon-chevron-down"style = "float:right"></span>
+                    </a>
+                    <div class="collapse" id="personal">
+                        <div class="card card-body"style = "margin-top:2px; Text-align:center; color:white;">
+                            List of the users personal Details eg phone number adress email adress.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>  
+        <div class="container" id = "Illness">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <a class="btn btn-primary btn-block"style = "border-radius: 10px;
+                        border: 2px solid white;" data-toggle="collapse" href="#illness" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Illnesses <span class="glyphicon glyphicon-chevron-down"style = "float:right"></span>
+                    </a>
+                    <div class="collapse" id="illness">
+                        <div class="card card-body"style = "margin-top:2px; Text-align:center; color:white;">
+                            List of all the current illnesses the users has.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <a class="btn btn-primary btn-block"style = "border-radius: 10px;
+                        border: 2px solid white;" data-toggle="collapse" href="#triggers" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Triggers/Allergys <span class="glyphicon glyphicon-chevron-down"style = "float:right"></span>
+                    </a>
+                    <div class="collapse" id="triggers">
+                        <div class="card card-body"style = "margin-top:2px; Text-align:center; color:white;">
+                            List of all the known triggers or allergys the users has.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container" id = "LastEpisode">
+            <div class="row">
+                <div class="col-sm-12">
+                    <a class="btn btn-primary btn-block" style = "border-radius: 10px;
+                        border: 2px solid white;" data-toggle="collapse" href="#episode" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Last Recorded Episode <span class="glyphicon glyphicon-chevron-down"style = "float:right"></span>
+                    </a>
+                    <div class="collapse" id="episode">
+                        <div class="card card-body"style = "Text-align:center; margin-top:2px; color:white;">
+                        Last Recorded Attack will be displayed in here.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container" id = "Gp">
+            <div class="row">
+                <div class="col-sm-12">
+                    <a class="btn btn-primary btn-block"style = "border-radius: 10px;
+                        border: 2px solid white;" data-toggle="collapse" href="#GpSpecialist" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Gp/Specialist Information <span class="glyphicon glyphicon-chevron-down"style = "float:right"></span>
+                    </a>
+                        <div class="collapse" id="GpSpecialist">
+                            <div class="card card-body"style = "margin-top:2px; Text-align:center; color:white;">
+                            Gp/Specialist email phone number and other contact information will be in here.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <footer>
+             MediPal Self-Monitoring Application | Reece Mooney Copyrite © 2019
+        </footer> 
+    </body>
+</html> 

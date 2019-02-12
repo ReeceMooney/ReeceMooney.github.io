@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MediPal</title>
+        <!-- Makes the application Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Allows the use of Bootstrap Resorces -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <!-- Links to Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <!-- Adds Logo to the title bar -->
+        <link rel="icon" type="image/png" href="logo.png" />
+    </head>
+    <body>
+        <header>
+            <!-- Makes the logo image responsive and scale depening on the device --> 
+            <img src="logo.png" alt="logo" class="responsive">
+        </header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand"><span class="glyphicon glyphicon-pencil"></span> Record A Episode
+                    </div>
+                </div>
+                <!-- Makes the nav bar responsive making it scale/collaps depening on the device's screen size -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="dashboard.html"><span class="glyphicon glyphicon-home"></span> Dashboard</a></li>
+                        <li><a href="order.html"><span class="glyphicon glyphicon-heart-empty"></span> Order more Medication</a></li>
+                        <li><a href="editprof.html"><span class="glyphicon glyphicon-user"></span> Edit your Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container"style = " color:white; text-align:center; border-radius: 10px;
+         margin-bottom:15px;">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"style="margin-bottom: 3px;">
+              During the episode what area's where affected?
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"> 
+              <input type="text" class="form-control" id="validationCustom01" placeholder="Affected Area" style="margin-bottom: 3px; text-align:center; ">
+            </div>
+        </div>
+        </div>
+       
+        <div class="container"style = " color:white; text-align:center; border-radius: 10px;
+         margin-bottom:15px;">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"style="margin-bottom: 3px; text-align:center;">
+              Was treatment administered to resolve the episode?
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> 
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="yes" name="yes/no" class="yes">
+                  <label class="custom-control-label" for="yes">Yes</label>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> 
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="no" name="yes/no" class="no">
+                  <label class="custom-control-label" for="no">No </label>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="container"style = " color:white; text-align:center; border-radius: 10px;
+         margin-bottom:15px;">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"style="margin-bottom: 3px; text-align:center;">
+              On a Scale of 0-5 how severe was the episode <br>( 1 being mild and 6 being unbarable )
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-2"> 
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="1" name="serious" class="1">
+                  <label class="custom-control-label2" for="customRadioInline1"style ="color:#6EFB05;">1</label>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-2"> 
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="2" name="serious" class="2">
+                  <label class="custom-control-label2" for="customRadioInline2"style ="color:#C7FB05;">2 </label>
+                </div>
+            </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-2"> 
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="3" name="serious" class="3">
+              <label class="custom-control-label2" for="customRadioInline1"style = "color:#FCFC03;">3</label>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-2"> 
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="4" name="serious" class="4">
+              <label class="custom-control-label2" for="customRadioInline2"style = "color:#FDDF26;">4 </label>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-2"> 
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="5" name="serious" class="5">
+              <label class="custom-control-label" for="customRadioInline2"style = "color:#FB9905;">5 </label>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-2"> 
+            <div class="custom-control custom-radio custom-control-inline" >
+              <input type="radio"style = "background:#ff0404;" id="6" name="serious" class="6">
+              <label class="custom-control-label" for="customRadioInline2"style = "color:#FB2305;">6 </label>
+            </div>
+        </div>
+      </div>
+    </div>
+         
+
+    <div class="container"style = " color:white; text-align:center; border-radius: 10px;
+         margin-bottom:15px;">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"style="margin-bottom: 3px;">
+              During the episode were there any know triggers?
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"> 
+              <input type="text" class="form-control" id="validationCustom01" placeholder="Known Triggers" style="margin-bottom: 3px; text-align:center; ">
+            </div>
+        </div>
+        </div>
+
+        <div class="container"style = " color:white; text-align:center; border-radius: 10px;
+         margin-bottom:15px;">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"style="margin-bottom: 3px; text-align:center;">
+              Did you get admited into hospital during the episode?
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> 
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="yes" name="admited" class="yes">
+                  <label class="custom-control-label" for="yes">Yes</label>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> 
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="no" name="admited" class="no">
+                  <label class="custom-control-label" for="no">No </label>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"></div>
+                <button type="submit" class="btn btn-primary" style="
+              width: -webkit-fill-available;  color:white; text-align:center; border-radius: 10px;
+         margin-bottom:15px;">Submit</button>
+            </div>
+          </div>
+          
+        </div>
+        <footer>
+             MediPal Self-Monitoring Application | Reece Mooney Copyrite © 2019
+        </footer> 
+    </body>
+</html> 

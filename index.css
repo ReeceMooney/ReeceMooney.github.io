@@ -1,0 +1,28 @@
+body{
+  background-image: linear-gradient(rgb(39, 94, 211), rgba(21, 196, 129, 0.822));
+}
+#p{
+  font-size:10vw;
+}
+#h1{
+  font-size:10vw;
+}
+header {
+  background-color: white;
+  text-align: center;
+}
+.responsive {
+  max-width: 30%;
+  text-align: left;
+}
+footer{
+  margin-top: 15px;
+  bottom: -15%;
+  background: #333;
+  color:white;
+  left: 0;
+  position: sticky;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
